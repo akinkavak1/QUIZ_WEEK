@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- JavaScript library CDN (Content Delivery Network)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+<!--                                 JQUERY SELECTOR QUESTIONS
+
+1.Ekrana bir buton iki adet p koy. Butona tıkladığında p lerin color ‘tomato’ renginde olsun
+2. Ekrana iki tane buton koy. Bu butonlara ayrı ayrı id ver. Birinci butona tıklandığında ikincisi, ikincisine tıklandığında birincisi kaybolsun.
+3.Ekrana 5 tane p koy. Herhangi bir class veya id vermeden hangi p ye tıklarsa o p nin rengi ‘tomato’ olsun
+4.Ekrana bir p ve bir buton koy. İçerisinde renklerin olduğu 7 lik bir dizi tanımla. Butona her tıkladığında diziden rastgele bir rengi p ye versin
+5.Ekrana bir adet p bir adet span bir adet img ve bir adet buton koy. Butona tıkladığımda buton dahil tüm elementler yok olsun. Bu işlem butonun click eventi içerisinde sadece tek satır kodda yapılmalı. Yani selector tüm elementleri seçmeli.
+
+-->
+<!-- 1.Ekrana bir buton iki adet p koy. Butona tıkladığında p lerin color ‘tomato’ renginde olsun  -->
+    <!-- <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam aut ad magnam sunt ex cumque voluptatum maxime cum beatae libero architecto, quasi asperiores voluptas natus repellat, esse ut necessitatibus dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus pariatur soluta iste unde iusto id? Architecto minus ducimus voluptatum. Voluptatibus beatae ipsum ullam modi dolorem cum, voluptas totam iusto.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam aut ad magnam sunt ex cumque voluptatum maxime cum beatae libero architecto, quasi asperiores voluptas natus repellat, esse ut necessitatibus dolorum.</p>
+        <button class="btn btn-primary text-center">Change Color</button>
+</div> -->
+
+<!-- 2.Ekrana iki tane buton koy. Bu butonlara ayrı ayrı id ver. Birinci butona tıklandığında ikincisi, ikincisine tıklandığında birincisi kaybolsun. -->
+<!-- <div class="container text-center d-flex justify-content-around ">
+    <button id="firstButton" class="btn-primary">Button-1</button>
+    <button id="secondButton"class="btn-primary">Button-2</button>
+</div> -->
+
+<!-- 3. Ekrana 5 tane p koy. Herhangi bir class veya id vermeden hangi p ye tıklarsa o p nin rengi ‘tomato’ olsun -->
+<!-- <div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem consequatur dicta atque est dolorem, assumenda possimus? Reprehenderit maxime in repudiandae dolor? Ullam possimus debitis, iusto provident inventore facilis qui.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem consequatur dicta atque est dolorem, assumenda possimus? Reprehenderit maxime in repudiandae dolor? Ullam possimus debitis, iusto provident inventore facilis qui.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem consequatur dicta atque est dolorem, assumenda possimus? Reprehenderit maxime in repudiandae dolor? Ullam possimus debitis, iusto provident inventore facilis qui.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem consequatur dicta atque est dolorem, assumenda possimus? Reprehenderit maxime in repudiandae dolor? Ullam possimus debitis, iusto provident inventore facilis qui.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem consequatur dicta atque est dolorem, assumenda possimus? Reprehenderit maxime in repudiandae dolor? Ullam possimus debitis, iusto provident inventore facilis qui.</p>
+</div> -->
+
+<!-- 4. Ekrana bir p ve bir buton koy. İçerisinde renklerin olduğu 7 lik bir dizi tanımla. Butona her tıkladığında diziden rastgele bir rengi p ye versin -->
+    <!-- <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit amet, ex explicabo repellendus facere, harum, corrupti nemo ullam voluptate dolorem iusto beatae laboriosam ducimus non? Deleniti amet omnis excepturi.</p>
+        <button class="btn btn-primary">Change Color</button>
+    </div> -->
+
+<!-- 5.Ekrana bir adet p bir adet span bir adet img ve bir adet buton koy. Butona tıkladığımda buton dahil tüm elementler yok olsun. Bu işlem butonun click eventi içerisinde sadece tek satır kodda yapılmalı. Yani selector tüm elementleri seçmeli. -->
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo nisi sint laboriosam quasi nobis tempore, minima explicabo, qui expedita obcaecati. Suscipit quasi harum praesentium quae voluptatem iusto modi asperiores.</p>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti et inventore ea nostrum officiis eum, aliquam vitae quasi laborum tempora eligendi ipsum iusto earum cum fugiat distinctio, aspernatur ad!</span>
+        <img src="https://i1.sndcdn.com/avatars-000288821683-n0npgy-t500x500.jpg" alt="avatar" width="200" height="200">
+        <button class="btn btn-danger d-block">Boooooom!</button>
+    </div> 
+
+<script>
+
+    // 5.Ekrana bir adet p bir adet span bir adet img ve bir adet buton koy. Butona tıkladığımda buton dahil tüm elementler yok olsun. Bu işlem butonun click eventi içerisinde sadece tek satır kodda yapılmalı. Yani selector tüm elementleri seçmeli.
+
+    $("button").click(function(){ $("*").hide("slow");})
+    // $("button").click(function(){ $(document).hide()}) // Why document cant hide?
+
+    //*************************************************************************************************************
+    // 4. Ekrana bir p ve bir buton koy. İçerisinde renklerin olduğu 7 lik bir dizi tanımla. Butona her tıkladığında diziden rastgele bir rengi p ye versin
+
+    // var myColors = ["red","green","blue","#f2f2f2","#d1d1d1","aqua","grey"];
+    // // var myRandomNumber = Math.round(Math.random()*7);
+    // var isChanged = 0;
+    // $("button").on("click",function(){
+    //     if(isChanged != 0){
+    //         $("p").css("color",myColors[Math.round(Math.random()*7)])
+    //         console.log("Random color is: " + "__"); // how can i reach this random color index?
+    //     }
+    //     else{
+    //         $("p").css("color",myColors[Math.round(Math.random()*7)]);
+    //         isChanged = 1;
+    //         console.log("Random color is: " + "___");
+    //     }
+        
+    // });
+
+    //*************************************************************************************************************
+    // 3. Ekrana 5 tane p koy. Herhangi bir class veya id vermeden hangi p ye tıklarsa o p nin rengi ‘tomato’ olsun
+
+    // var IsClicked = 0;
+    // $("p").on("click", function() {
+    //     if (IsClicked != 0){
+    //         $("p").css("color","black");
+    //         $(this).css("color","tomato");
+    //     }
+    //     else {
+    //         $(this).css("color","tomato");
+    //         IsClicked = 1;
+    //     }
+    // });
+
+    //**************************************************************************************************************
+    // 2.Ekrana iki tane buton koy. Bu butonlara ayrı ayrı id ver. Birinci butona tıklandığında ikincisi, ikincisine tıklandığında birincisi kaybolsun.
+
+    // $("button").click(function(){ // how reset the buttons? how call this function as default? Why id ypeof object?
+    //     // console.log($(this).attr("id"));
+    //     if ( ($(this).attr("id")) == "firstButton" ) {
+    //         $("#secondButton").hide("slow");
+    //         $("#secondButton").show("slow");
+    //     }
+    //     else {
+    //         $("#firstButton").hide("slow");
+    //         $("#firstButton").show("slow");
+    //     }
+    // });
+
+    // ***************************************************************************************************
+    // // 1.Ekrana bir buton iki adet p koy. Butona tıkladığında p lerin color ‘tomato’ renginde olsun.
+    // $("button").click(function(){
+    //     $("p").css("color","tomato");
+    // });
+
+    
+</script>
+
+</body>
+</html>
